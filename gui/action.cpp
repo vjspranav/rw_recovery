@@ -2125,7 +2125,7 @@ exit:
 
 int GUIAction::flashlight(std::string arg __unused)
  {
-	std::string path, one, zero, flashpath = "/sys/class/leds/led:torch_1;/sys/class/leds/torch-light;";
+	std::string path, one, zero, flashpath = "/sys/class/leds/led:torch_;/sys/class/leds/torch-light;";
     struct stat st;
     bool done = false;
     size_t start_pos = 0, end_pos;
